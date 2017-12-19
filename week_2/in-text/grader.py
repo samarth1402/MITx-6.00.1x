@@ -11,6 +11,13 @@
 import math
 
 def polysum(n,s):
+    """
+    :param n: no of sides, integer
+    :param s: side length, integer
+    :return: sum rounded to 4 decimal places
+    """
+
+
     area = ( 0.25 * n * s**2 ) / math.tan(math.pi/n)
     perimeter= n * s
     sum = area + perimeter**2
